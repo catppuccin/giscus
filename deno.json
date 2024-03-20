@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "build": "deno run -A src/build.ts"
+  },
+  "imports": {
+    "std/": "https://deno.land/std@0.220.1/"
+  }
+}

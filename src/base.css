@@ -1,0 +1,87 @@
+@accent-color: @mauve;
+
+main {
+  --color-prettylights-syntax-comment: @overlay1;
+  --color-prettylights-syntax-constant: @blue;
+  --color-prettylights-syntax-entity: @blue;
+  --color-prettylights-syntax-storage-modifier-import: @peach;
+  --color-prettylights-syntax-entity-tag: @teal;
+  --color-prettylights-syntax-keyword: @pink;
+  --color-prettylights-syntax-string: @green;
+  --color-prettylights-syntax-variable: @peach;
+  --color-prettylights-syntax-invalid-illegal-text: @red;
+  --color-prettylights-syntax-invalid-illegal-bg: fadeout(@red, 85%);
+  --color-prettylights-syntax-markup-heading: @teal;
+  --color-prettylights-syntax-markup-italic: @yellow;
+  --color-prettylights-syntax-markup-bold: @yellow;
+  --color-prettylights-syntax-markup-deleted-text: @text;
+  --color-prettylights-syntax-markup-deleted-bg: fadeout(@red, 60%);
+  --color-prettylights-syntax-markup-inserted-text: @text;
+  --color-prettylights-syntax-markup-inserted-bg: fadeout(@green, 60%);
+  --color-prettylights-syntax-markup-changed-text: @text;
+  --color-prettylights-syntax-markup-changed-bg: fadeout(@yellow, 60%);
+  --color-prettylights-syntax-markup-ignored-text: @text;
+  --color-btn-text: @text;
+  --color-btn-bg: @surface0;
+  --color-btn-border: @surface1;
+  --color-btn-hover-bg: @surface1;
+  --color-btn-hover-border: @surface2;
+  --color-btn-active-bg: @surface2;
+  --color-btn-selected-bg: @surface2;
+  --color-btn-counter-bg: @surface2;
+  --color-btn-outline-text: @accent-color;
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-primary-text: @base;
+  --color-btn-primary-bg: @green;
+  --color-btn-primary-border: transparent;
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: lighten(@green, 10%);
+  --color-btn-primary-hover-border: lighten(@green, 10%);
+  --color-btn-primary-selected-bg: lighten(@green, 10%);
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: @crust;
+  --color-btn-primary-disabled-bg: fadeout(@green, 60%);
+  --color-btn-primary-disabled-border: transparent;
+  --color-action-list-item-default-hover-bg: @surface1;
+  --color-segmented-control-bg: @subtext1;
+  --color-segmented-control-button-bg: @base;
+  --color-segmented-control-button-selected-border: @overlay0;
+
+  --color-fg-default: @text;
+  --color-fg-muted: @subtext1;
+  --color-fg-subtle: @subtext1;
+  --color-canvas-default: @base;
+  --color-canvas-overlay: @surface0;
+  --color-canvas-inset: @crust;
+  --color-canvas-subtle: @mantle;
+  --color-border-default: @surface1;
+  --color-border-muted: @surface0;
+  --color-neutral-muted: fadeout(@overlay0, 60%);
+  --color-accent-fg: @accent-color;
+  --color-accent-emphasis: @accent-color;
+  --color-accent-muted: fadeout(@accent-color, 60%);
+  --color-accent-subtle: fadeout(@accent-color, 85%);
+  --color-success-fg: @green;
+  --color-attention-fg: @peach;
+  --color-attention-muted: @accent-color;
+  --color-attention-subtle: fadeout(@accent-color, 85%);
+  --color-danger-fg: @red;
+  --color-danger-muted: fadeout(@red, 60%);
+  --color-danger-subtle: fadeout(@red, 20%);
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: @surface1;
+  --color-scale-blue-8: darken(@blue, 10%);
+
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+main .pagination-loader-container {
+  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+}
+
+main .gsc-loading-image {
+  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+}
