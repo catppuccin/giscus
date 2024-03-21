@@ -3,8 +3,10 @@ import { join } from "std/path/mod.ts";
 import { flavorEntries } from "npm:@catppuccin/palette@1.1.0";
 
 const THEME_DIR = join(import.meta.dirname as string, "../themes/");
-await Deno.remove(THEME_DIR).catch(() => {});
-await Deno.mkdir(THEME_DIR);
+
+await Deno.remove(THEME_DIR, { recursive: true })
+  .catch(() => {})
+  .finally(() => Deno.mkdir(THEME_DIR));
 
 for (const [flavor, { colorEntries }] of flavorEntries) {
   const { css } = await less.render(
@@ -15,8 +17,5 @@ for (const [flavor, { colorEntries }] of flavorEntries) {
       ),
     }
   );
-  await Deno.writeTextFile(
-    join(import.meta.dirname as string, "../themes/", flavor + ".css"),
-    css
-  );
+  await Deno.writeTextFile(join(THEME_DIR, flavor + ".css"), css);
 }
