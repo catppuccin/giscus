@@ -43,7 +43,7 @@ main {
   --color-btn-primary-disabled-bg: rgba(64, 160, 43, 0.4);
   --color-btn-primary-disabled-border: transparent;
   --color-action-list-item-default-hover-bg: #bcc0cc;
-  --color-segmented-control-bg: #8c8fa1;
+  --color-segmented-control-bg: #acb0be;
   --color-segmented-control-button-bg: #eff1f5;
   --color-segmented-control-button-selected-border: #9ca0b0;
   --color-fg-default: #4c4f69;
@@ -73,9 +73,12 @@ main {
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
 }
-main .pagination-loader-container {
-  background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg");
+main .BtnGroup-item:not(.BtnGroup-item--selected) {
+  --color-btn-text: #dce0e8;
+}
+main .gsc-comment-box-textarea::placeholder {
+  color: #6c6f85;
 }
 main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+  background-image: url("https://raw.githubusercontent.com/uncenter/ctp-giscus/main/assets/loading.gif");
 }

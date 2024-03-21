@@ -45,7 +45,7 @@ main {
   --color-btn-primary-disabled-bg: fadeout(@green, 60%);
   --color-btn-primary-disabled-border: transparent;
   --color-action-list-item-default-hover-bg: @surface1;
-  --color-segmented-control-bg: @overlay1;
+  --color-segmented-control-bg: @surface2;
   --color-segmented-control-button-bg: @base;
   --color-segmented-control-button-selected-border: @overlay0;
 
@@ -78,10 +78,14 @@ main {
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
 }
 
-main .gsc-loading-image {
-  background-image: url("https://github.githubassets.com/images/mona-loading-dark.gif");
+main .BtnGroup-item:not(.BtnGroup-item--selected) {
+  --color-btn-text: @crust;
 }
 
 main .gsc-comment-box-textarea::placeholder {
   color: @subtext0;
+}
+
+main .gsc-loading-image {
+  background-image: url("https://raw.githubusercontent.com/uncenter/ctp-giscus/main/assets/loading.gif");
 }
