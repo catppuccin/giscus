@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flaovr>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`).
+1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flavor>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`).
 
 ## 💝 Thanks to
 
