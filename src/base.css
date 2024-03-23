@@ -83,5 +83,5 @@ main .gsc-comment-box-textarea::placeholder {
 }
 
 main .gsc-loading-image {
-  background-image: url("https://raw.githubusercontent.com/uncenter/ctp-giscus/main/assets/loading.gif");
+  background-image: url("https://giscus.catppuccin.com/assets/loading.gif");
 }
