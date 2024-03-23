@@ -6,9 +6,9 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/uncenter/ctp-giscus/stargazers"><img src="https://img.shields.io/github/stars/uncenter/ctp-giscus?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/uncenter/ctp-giscus/issues"><img src="https://img.shields.io/github/issues/uncenter/ctp-giscus?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/uncenter/ctp-giscus/contributors"><img src="https://img.shields.io/github/contributors/uncenter/ctp-giscus?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/giscus/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/giscus?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/giscus/issues"><img src="https://img.shields.io/github/issues/catppuccin/giscus?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/giscus/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/giscus?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://ctp-giscus.uncenter.dev/<flavor>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`).
+1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flaovr>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`).
 
 ## 💝 Thanks to
 
