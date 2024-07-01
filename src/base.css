@@ -82,6 +82,6 @@ main .gsc-comment-box-textarea::placeholder {
   color: @subtext0;
 }
 
-main .gsc-loading-image {
+main .gsc-loading-image when (@loader = true) {
   background-image: url("https://giscus.catppuccin.com/assets/loading.gif");
 }
