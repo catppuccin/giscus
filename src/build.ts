@@ -28,5 +28,5 @@ for (const [flavor, { colorEntries }] of flavorEntries) {
 
   vars.globalVars.loader = true;
   const { css: withLoader } = await less.render(src, vars);
-  await Deno.writeTextFile(join(THEME_DIR, flavor + "-loader..css"), withLoader);
+  await Deno.writeTextFile(join(THEME_DIR, flavor + ".css"), withLoader);
 }
