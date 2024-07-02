@@ -38,6 +38,11 @@
 
 1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flavor>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`).
 
+> [!TIP]
+> If you don't want the Pepperjack loading spinner, add `-no-loader` after the name of the flavor: `https://giscus.catppuccin.com/themes/<flavor>-no-loader.css`.
+one of `latte`, `frappe`, `macchiato`, or `mocha`, and `<loader>` is either `loader` or `no-loader`, depending on whether you want the Pepperjack
+loading icon
+
 ## 💝 Thanks to
 
 - [uncenter](https://github.com/uncenter)

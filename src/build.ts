@@ -9,13 +9,24 @@ await Deno.remove(THEME_DIR, { recursive: true })
   .finally(() => Deno.mkdir(THEME_DIR));
 
 for (const [flavor, { colorEntries }] of flavorEntries) {
-  const { css } = await less.render(
-    await Deno.readTextFile(join(import.meta.dirname as string, "base.css")),
-    {
-      globalVars: Object.fromEntries(
-        colorEntries.map(([name, { hex }]) => [name, hex])
-      ),
-    }
+  const src = await Deno.readTextFile(
+    join(import.meta.dirname as string, "base.css")
   );
-  await Deno.writeTextFile(join(THEME_DIR, flavor + ".css"), css);
+
+  const vars = {
+    globalVars: {
+      ...Object.fromEntries(colorEntries.map(([name, { hex }]) => [name, hex])),
+      loader: false,
+    },
+  };
+
+  const { css: noLoader } = await less.render(src, vars);
+  await Deno.writeTextFile(
+    join(THEME_DIR, flavor + "-no-loader.css"),
+    noLoader
+  );
+
+  vars.globalVars.loader = true;
+  const { css: withLoader } = await less.render(src, vars);
+  await Deno.writeTextFile(join(THEME_DIR, flavor + ".css"), withLoader);
 }
