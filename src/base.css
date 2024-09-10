@@ -1,17 +1,18 @@
 @accent-color: @mauve;
 
 main {
-  --color-prettylights-syntax-comment: @overlay1;
+  --color-prettylights-syntax-comment: @overlay2;
   --color-prettylights-syntax-constant: @blue;
+  --color-prettylights-syntax-constant-other-reference-link: @blue;
   --color-prettylights-syntax-entity: @blue;
   --color-prettylights-syntax-storage-modifier-import: @peach;
-  --color-prettylights-syntax-entity-tag: @teal;
-  --color-prettylights-syntax-keyword: @pink;
+  --color-prettylights-syntax-entity-tag: @blue;
+  --color-prettylights-syntax-keyword: @mauve;
   --color-prettylights-syntax-string: @green;
   --color-prettylights-syntax-variable: @peach;
   --color-prettylights-syntax-invalid-illegal-text: @red;
   --color-prettylights-syntax-invalid-illegal-bg: fadeout(@red, 85%);
-  --color-prettylights-syntax-markup-heading: @teal;
+  --color-prettylights-syntax-markup-heading: @red;
   --color-prettylights-syntax-markup-italic: @yellow;
   --color-prettylights-syntax-markup-bold: @yellow;
   --color-prettylights-syntax-markup-deleted-text: @text;
