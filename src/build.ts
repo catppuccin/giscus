@@ -1,6 +1,6 @@
 import less from "npm:less";
 import { join } from "std/path/mod.ts";
-import { flavorEntries } from "npm:@catppuccin/palette@1.1.0";
+import { flavorEntries } from "npm:@catppuccin/palette@1.4.0";
 
 const THEME_DIR = join(import.meta.dirname as string, "../themes/");
 
