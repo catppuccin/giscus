@@ -3,6 +3,6 @@
     "build": "deno run -A src/build.ts"
   },
   "imports": {
-    "std/": "https://deno.land/std@0.220.1/"
+    "std/": "https://deno.land/std@0.224.0/"
   }
 }
