@@ -1,15 +1,16 @@
 main {
-  --color-prettylights-syntax-comment: #8c8fa1;
+  --color-prettylights-syntax-comment: #7c7f93;
   --color-prettylights-syntax-constant: #1e66f5;
+  --color-prettylights-syntax-constant-other-reference-link: #1e66f5;
   --color-prettylights-syntax-entity: #1e66f5;
   --color-prettylights-syntax-storage-modifier-import: #fe640b;
-  --color-prettylights-syntax-entity-tag: #179299;
-  --color-prettylights-syntax-keyword: #ea76cb;
+  --color-prettylights-syntax-entity-tag: #1e66f5;
+  --color-prettylights-syntax-keyword: #8839ef;
   --color-prettylights-syntax-string: #40a02b;
   --color-prettylights-syntax-variable: #fe640b;
   --color-prettylights-syntax-invalid-illegal-text: #d20f39;
   --color-prettylights-syntax-invalid-illegal-bg: rgba(210, 15, 57, 0.15);
-  --color-prettylights-syntax-markup-heading: #179299;
+  --color-prettylights-syntax-markup-heading: #d20f39;
   --color-prettylights-syntax-markup-italic: #df8e1d;
   --color-prettylights-syntax-markup-bold: #df8e1d;
   --color-prettylights-syntax-markup-deleted-text: #4c4f69;
