@@ -36,9 +36,17 @@
 
 ## Usage
 
-1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flavor>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`). For example, `https://giscus.catppuccin.com/themes/mocha.css`. To use a custom accent, add `-<accent>` (where `<accent>` is an accent color of the palette) after the name of the flavor. For example, `https://giscus.catppuccin.com/themes/mocha-blue.css`.
+Catppuccin is included as a theme in Giscus by default. Set the `data-theme` attribute on your Giscus `<script>` tag to `catppuccin_<flavor>`, where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`. For example, `data-theme="catppuccin_mocha"`. This method does not support accent color customization.
 
 > [!TIP]
+> You can preview the Catppuccin themes (and others) by selecting them in the Giscus website's theme selector: https://giscus.app/#theme.
+
+Alternatively, you can set the theme directly to the ones in this repository, which additionally supports accent color customization.
+
+1. Set the `data-theme` attribute on your Giscus `<script>` tag to `https://giscus.catppuccin.com/themes/<flavor>.css` (where `<flavor>` is one of `latte`, `frappe`, `macchiato`, or `mocha`). For example, `data-theme="https://giscus.catppuccin.com/themes/mocha.css"`.
+2. To use a custom accent, add `-<accent>` (where `<accent>` is an accent color of the palette) after the name of the flavor. For example, `data-theme="https://giscus.catppuccin.com/themes/mocha-blue.css"`.
+
+> [!NOTE]
 > If you don't want the Pepperjack loading spinner, add `-no-loader` after the name of the flavor/accent: `https://giscus.catppuccin.com/themes/<flavor>-no-loader.css` (or `https://giscus.catppuccin.com/themes/<flavor>-<accent>-no-loader.css` with a custom accent).
 
 ## 💝 Thanks to
