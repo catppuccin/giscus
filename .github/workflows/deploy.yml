@@ -17,10 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Deno
+        uses: nekowinston/setup-deno@main
+        with:
+          deno-version: v2.1.5
+
+      - name: Build themes
+        run: deno task build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./"
+          path: "./dist"
 
       - name: Deploy artifact to GitHub Pages
         id: deploy

@@ -1,13 +1,13 @@
 import less from "npm:less";
-import { join } from "std/path/mod.ts";
+import { join, dirname } from "std/path/mod.ts";
 import { flavorEntries } from "npm:@catppuccin/palette@1.1.0";
 
-const THEME_DIR = join(import.meta.dirname as string, "../themes/");
+const THEME_DIR = join(import.meta.dirname as string, "../dist/themes/");
 const DEFAULT_ACCENT = "mauve";
 
-await Deno.remove(THEME_DIR, { recursive: true })
+await Deno.remove(dirname(THEME_DIR), { recursive: true })
   .catch(() => {})
-  .finally(() => Deno.mkdir(THEME_DIR));
+  .finally(() => Deno.mkdir(THEME_DIR, { recursive: true }));
 
 const base = await Deno.readTextFile(
   join(import.meta.dirname as string, "base.less")
