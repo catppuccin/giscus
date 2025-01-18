@@ -1,6 +1,6 @@
 import less from "npm:less";
 import { join } from "std/path/mod.ts";
-import { flavorEntries } from "npm:@catppuccin/palette@1.1.0";
+import { flavorEntries } from "npm:@catppuccin/palette@1.7.1";
 
 const SRC_DIR = import.meta.dirname as string;
 const DIST_DIR = join(SRC_DIR, "../dist/");
